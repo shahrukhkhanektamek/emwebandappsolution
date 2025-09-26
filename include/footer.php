@@ -1,22 +1,8 @@
 
 	<!-- Main Footer -->
 	<footer class="main-footer">
-		<div class="bg bg-pattern-9"></div>
-		<div class="auto-container">
-			<div class="subscribe-form">
-				<div class="title-column">
-					<h5 class="title"><i class="icon flaticon-open-envelope"></i> Subscribe now to get <br>latest updates</h5>
-				</div>
-				<div class="form-column">
-					<form method="post" action="#">
-						<div class="form-group">
-							<input type="email" name="email" class="email" value="" placeholder="Email Address" required="">
-							<button type="button" class="theme-btn"><i class="fa fa-paper-plane"></i></button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
+		<!-- <div class="bg bg-pattern-9"></div> -->
+		
 
 		<!--Widgets Section-->
 		<div class="widgets-section">
@@ -25,7 +11,7 @@
 					<!--Footer Column-->
 					<div class="footer-column col-xl-3 col-lg-12 col-md-12">
 						<div class="footer-widget about-widget">
-							<div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+							<div class="logo"><a href="index.html"><img src="images/logo-3.png" alt=""></a></div>
 							<div class="text">Whether you’re a startup looking to build your first product or an established enterprise seeking digital transformation...</div>
 							<ul class="social-icon-two">
 								<li><a href="#"><i class="fab fa-twitter"></i></a></li>

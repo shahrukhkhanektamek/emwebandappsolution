@@ -30,13 +30,12 @@
 	<div class="preloader"></div>
 
 	<!-- Main Header-->
-	<header class="main-header header-style-one">
+	<header class="main-header header-style-three">
 		<!-- Header Top -->
-		<div class="header-top">
+		<!-- <div class="header-top">
 			<div class="inner-container">
 
 				<div class="top-left">
-					<!-- Info List -->
 					<ul class="list-style-one">
 						<li><i class="fa fa-envelope"></i> <a href="mailto:emwebandappsolution@gmail.com"><span class="__cf_email__" >emwebandappsolution@gmail.com</span></a></li>
 						<li><i class="fa fa-map-marker"></i> Delhi</li>
@@ -55,7 +54,7 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- Header Top -->
 
 		<div class="header-lower">

@@ -23,12 +23,12 @@
 					<div class="project-block">
 						<div class="inner-box">
 							<div class="image-box">
-								<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-1.jpg" alt=""></a>
+								<figure class="image"><a href="project-details.php"><img src="images/resource/project-1.jpg" alt=""></a>
 								</figure>
 								<div class="info-box">
-									<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+									<a href="project-details.php" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 									<span class="cat">Graphics</span>
-									<h6 class="title"><a href="page-project-details.html">Digital marketing web</a></h6>
+									<h6 class="title"><a href="project-details.php">Digital marketing web</a></h6>
 								</div>
 							</div>
 						</div>
@@ -39,12 +39,12 @@
 					<div class="project-block">
 						<div class="inner-box">
 							<div class="image-box">
-								<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-2.jpg" alt=""></a>
+								<figure class="image"><a href="project-details.php"><img src="images/resource/project-2.jpg" alt=""></a>
 								</figure>
 								<div class="info-box">
-									<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+									<a href="project-details.php" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 									<span class="cat">Graphics</span>
-									<h6 class="title"><a href="page-project-details.html">Digital marketing web</a></h6>
+									<h6 class="title"><a href="project-details.php">Digital marketing web</a></h6>
 								</div>
 							</div>
 						</div>
@@ -55,12 +55,12 @@
 					<div class="project-block">
 						<div class="inner-box">
 							<div class="image-box">
-								<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-4.jpg" alt=""></a>
+								<figure class="image"><a href="project-details.php"><img src="images/resource/project-4.jpg" alt=""></a>
 								</figure>
 								<div class="info-box">
-									<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+									<a href="project-details.php" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 									<span class="cat">Graphics</span>
-									<h6 class="title"><a href="page-project-details.html">Digital marketing web</a></h6>
+									<h6 class="title"><a href="project-details.php">Digital marketing web</a></h6>
 								</div>
 							</div>
 						</div>
@@ -71,12 +71,12 @@
 					<div class="project-block">
 						<div class="inner-box">
 							<div class="image-box">
-								<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-4.jpg" alt=""></a>
+								<figure class="image"><a href="project-details.php"><img src="images/resource/project-4.jpg" alt=""></a>
 								</figure>
 								<div class="info-box">
-									<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+									<a href="project-details.php" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 									<span class="cat">Graphics</span>
-									<h6 class="title"><a href="page-project-details.html">Digital marketing web</a></h6>
+									<h6 class="title"><a href="project-details.php">Digital marketing web</a></h6>
 								</div>
 							</div>
 						</div>
@@ -87,12 +87,12 @@
 					<div class="project-block">
 						<div class="inner-box">
 							<div class="image-box">
-								<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-3.jpg" alt=""></a>
+								<figure class="image"><a href="project-details.php"><img src="images/resource/project-3.jpg" alt=""></a>
 								</figure>
 								<div class="info-box">
-									<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+									<a href="project-details.php" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 									<span class="cat">Graphics</span>
-									<h6 class="title"><a href="page-project-details.html">Digital marketing web</a></h6>
+									<h6 class="title"><a href="project-details.php">Digital marketing web</a></h6>
 								</div>
 							</div>
 						</div>
@@ -103,12 +103,12 @@
 					<div class="project-block">
 						<div class="inner-box">
 							<div class="image-box">
-								<figure class="image"><a href="page-project-details.html"><img src="images/resource/project-2.jpg" alt=""></a>
+								<figure class="image"><a href="project-details.php"><img src="images/resource/project-2.jpg" alt=""></a>
 								</figure>
 								<div class="info-box">
-									<a href="page-project-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+									<a href="project-details.php" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
 									<span class="cat">Graphics</span>
-									<h6 class="title"><a href="page-project-details.html">Digital marketing web</a></h6>
+									<h6 class="title"><a href="project-details.php">Digital marketing web</a></h6>
 								</div>
 							</div>
 						</div>

@@ -1,97 +1,49 @@
 
 <?php include"include/header.php"; ?>
-	<!--Main Slider-->
-	<section class="main-slider">
-		<div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
-			<div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
-				<ul>
-					<!-- Slide 1 -->
-					<li data-index="rs-1" data-transition="zoomout">
-						<!-- MAIN IMAGE -->
-						<img src="images/main-slider/1.jpg" alt="" class="rev-slidebg">
+<style>
+.header-style-three {
+  position: absolute;
+}
+</style>
 
-						<div class="tp-caption"
-						data-paddingbottom="[15,15,15,15]"
-						data-paddingleft="[15,15,15,15]"
-						data-paddingright="[15,15,15,15]"
-						data-paddingtop="[0,0,0,0]"
-						data-responsive_offset="on"
-						data-type="text" data-height="none"
-						data-width="['750','750','750','650']"
-						data-whitespace="normal"
-						data-hoffset="['0','0','0','0']"
-						data-voffset="['20','20','0','0']"
-						data-x="['left','left','left','left']"
-						data-y="['middle','middle','middle','middle']"
-						data-textalign="['top','top','top','top']"
-						data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-							<h1>Website <span class="style-font color2">&amp;</span> <br>applications <br>design agency</h1>
+		<!-- Banner Section -->
+	<section class="banner-section-two">
+		<div class="banner-carousel owl-carousel owl-theme">
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="bg-image" style="background-image: url(images/main-slider/bg-pattern-2.jpg);"></div>
+				<div class="auto-container">
+					<div class="row">
+						<div class="content-column col-lg-6 col-md-12">
+							<div class="content-box">
+								<span class="arrow-icon"><img src="images/main-slider/arrow.png" alt=""></span>
+								<h1 class="title animate-1">We <br>Create Quality Designs</h1>
+								<div class="btn-box animate-3">
+									<a href="#" class="theme-btn btn-style-one"><span class="btn-title">Explore Now</span></a>
+									<a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-btn lightbox-image"><i class="icon fa fa-play"></i> Work <br>Showcase</a>
+								</div>
+							</div>
 						</div>
 
-
-						<div class="tp-caption" data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[15,15,15,15]"
-						data-paddingright="[15,15,15,15]"
-						data-paddingtop="[0,0,0,0]"
-						data-responsive_offset="on"
-						data-type="text" data-height="none"
-						data-width="['700','750','700','450']"
-						data-whitespace="normal"
-						data-hoffset="['0','0','0','0']"
-						data-voffset="['215','215','215','215']"
-						data-x="['left','left','left','left']"
-						data-y="['middle','middle','middle','middle']"
-						data-textalign="['top','top','top','top']"
-						data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-							<a href="page-about.html" class="theme-btn btn-style-one bg-theme-color2"><span class="btn-title">Explore now</span></a>
+						<div class="image-column col-lg-6 col-md-12">
+							<div class="image-box">
+								<figure class="image-1 overlay-anim"><img src="images/main-slider/5.jpg" alt=""></figure>
+								<figure class="image-2 overlay-anim"><img src="images/main-slider/6.jpg" alt=""></figure>
+							</div>
 						</div>
-					</li>
-					<!-- Slide 2 -->
-					<li data-index="rs-2" data-transition="zoomout">
-						<!-- MAIN IMAGE -->
-						<img src="images/main-slider/2.jpg" alt="" class="rev-slidebg">
-
-						<div class="tp-caption"
-						data-paddingbottom="[15,15,15,15]"
-						data-paddingleft="[15,15,15,15]"
-						data-paddingright="[15,15,15,15]"
-						data-paddingtop="[0,0,0,0]"
-						data-responsive_offset="on"
-						data-type="text" data-height="none"
-						data-width="['750','750','750','650']"
-						data-whitespace="normal"
-						data-hoffset="['0','0','0','0']"
-						data-voffset="['20','20','0','0']"
-						data-x="['left','left','left','left']"
-						data-y="['middle','middle','middle','middle']"
-						data-textalign="['top','top','top','top']"
-						data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-							<h1>Website <span class="style-font color2">&amp;</span> <br>applications <br>design agency</h1>
-						</div>
-
-
-						<div class="tp-caption" data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[15,15,15,15]"
-						data-paddingright="[15,15,15,15]"
-						data-paddingtop="[0,0,0,0]"
-						data-responsive_offset="on"
-						data-type="text" data-height="none"
-						data-width="['700','750','700','450']"
-						data-whitespace="normal"
-						data-hoffset="['0','0','0','0']"
-						data-voffset="['215','215','215','215']"
-						data-x="['left','left','left','left']"
-						data-y="['middle','middle','middle','middle']"
-						data-textalign="['top','top','top','top']"
-						data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-							<a href="page-about.html" class="theme-btn btn-style-one bg-theme-color2"><span class="btn-title">Explore now</span></a>
-						</div>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 		</div>
+		<ul class="banner-social-links">
+			<li><a href="#">facebook</a></li>
+			<li><a href="#">twitter</a></li>
+			<li><a href="#">instagram</a></li>
+		</ul>
 	</section>
-	<!-- End Main Slider-->
+	<!-- End Banner Section -->
+
+
 
 	<!-- About Section -->
 	<section class="about-section">
@@ -253,6 +205,58 @@
 	</section>
 	<!-- End Services Section-->
 
+		<!-- Features Section Four -->
+	<section class="features-section-four p-0">
+		<div class="container-fluid m-0 p-0" style="padding: 0 1rem !important;"> 
+			<div class="row g-0">
+				<!-- Feature Block Five-->
+				<div class="feature-block-five col-lg-3 col-md-12 col-sm-12 wow fadeInLeft">
+					<div class="inner-box">
+						<div class="content">
+							<span class="count">01</span>
+							<h5 class="title">Research</h5>
+							<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas. sapien nunc amet ultrices</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Feature Block Five-->
+				<div class="feature-block-five col-lg-3 col-md-12 col-sm-12 wow fadeInRight">
+					<div class="inner-box">
+						<div class="content">
+							<span class="count">02</span>
+							<h5 class="title">Customize</h5>
+							<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas. sapien nunc amet ultrices</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Feature Block Five-->
+				<div class="feature-block-five col-lg-3 col-md-12 col-sm-12 wow fadeInRight">
+					<div class="inner-box">
+						<div class="content">
+							<span class="count">03</span>
+							<h5 class="title">Targeting</h5>
+							<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas. sapien nunc amet ultrices</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Feature Block Five-->
+				<div class="feature-block-five col-lg-3 col-md-12 col-sm-12 wow fadeInRight">
+					<div class="inner-box">
+						<div class="content">
+							<span class="count">04</span>
+							<h5 class="title">Result</h5>
+							<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas. sapien nunc amet ultrices</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Features Section Four -->
+
 	<!-- Features Section -->
 	<section class="features-section">
 		<div class="bg bg-pattern-1"></div>
@@ -376,6 +380,49 @@
 		</div>
 	</section>
 	<!--Emd Why Choose Us -->
+
+		<!-- Work Section Two -->
+	<section class="work-section-two">
+		<div class="row g-0">
+			<!-- Content Column -->
+			<div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
+				<div class="bg bg-pattern-16"></div>
+				<div class="inner-column">
+					<div class="sec-title light">
+						<span class="sub-title">Working areas</span>
+						<h2>IT Services Customized for Your Industry</h2>
+						<div class="other-text">Lorem ipsum is simply free text dolor sit am adipi we help you <br>ensure everyone.</div>
+						<div class="text">Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt ualiqua</div>
+					</div>
+
+					<div class="row">
+						<!-- Work Block Two -->
+						<div class="work-block-two col-lg-6 col-md-6">
+							<div class="inner-box">
+								<i class="icon flaticon-repair"></i>
+								<h5 class="title">Quality web designing</h5>
+							</div>
+						</div>
+
+						<!-- Work Block Two -->
+						<div class="work-block-two col-lg-6 col-md-6">
+							<div class="inner-box">
+								<i class="icon flaticon-search-engine"></i>
+								<h5 class="title">SEO & content Writing</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Image Column -->
+			<div class="image-column col-lg-6 col-md-12 col-sm-12">
+				<figure class="image"><img src="images/resource/work-2.jpg" alt=""></figure>
+				<div class="sign"><img src="images/resource/sign.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+	<!-- End Features Section -->
 
 	<!-- FAQ Section -->
 	<section class="faqs-section">
@@ -675,19 +722,31 @@
 	</section>
 	<!-- End Contact Info Section -->
 
-	<!-- Call To Action -->
-	<section class="call-to-action">
-		<div class="bg bg-pattern-8"></div>
+
+
+		<!-- Contact Info Section -->
+	<section class="contact-info-section">
 		<div class="auto-container">
-			<div class="outer-box wow fadeIn">
-				<div class="title-box">
-					<h2 class="title">Looking for the best web design <br>solutions?</h2>
+			<div class="row">
+				<!-- Contact Info Two -->
+				<div class="contact-info-block-two col-lg-6 col-md-12">
+					<div class="inner-box">
+						<div class="bg"></div>
+						<h3 class="title">Solution for large & <br> small businesses</h3>
+						<a href="page-contact.html" class="theme-btn btn-style-one light"><span class="btn-title">Free consultation</span></a>
+					</div>
 				</div>
-				<div class="btn-box">
-					<a href="page-contact.html" class="theme-btn btn-style-one light"><span class="btn-title">Contact Us</span></a>
+
+				<!-- Contact Info THree -->
+				<div class="contact-info-block-three col-lg-6 col-md-12">
+					<div class="inner-box">
+						<div class="bg" style="background-image: url(images/resource/info-bg.jpg)"></div>
+						<h3 class="title">Need quick help? <br>call now</h3>
+						<h3 class="num"><a href="#">+92 (8800) 6930</a></h3>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--End Call To Action -->
+	<!-- End Contact Info Section -->
 <?php include"include/footer.php"; ?>
