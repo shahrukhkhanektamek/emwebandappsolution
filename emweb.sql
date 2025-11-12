@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2025 at 08:29 PM
+-- Generation Time: Nov 12, 2025 at 02:11 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -5553,7 +5553,10 @@ INSERT INTO `login_history` (`id`, `user_id`, `role`, `ip_address`, `date`, `tim
 (233, '1', 1, '223.233.80.234', '2025-06-18', '12:19:23', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
 (234, '1', 1, '103.171.187.86', '2025-06-18', '14:47:40', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
 (235, '1', 1, '49.36.144.47', '2025-06-18', '18:22:27', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
-(236, '1', 1, '::1', '2025-11-11', '23:12:26', '', NULL, '', NULL, 1, 'e10adc3949ba59abbe56e057f20f883e');
+(236, '1', 1, '::1', '2025-11-11', '23:12:26', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
+(237, '1', 1, '::1', '2025-11-12', '11:49:09', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
+(238, '1', 1, '::1', '2025-11-12', '11:49:46', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
+(239, '1', 1, '::1', '2025-11-12', '17:23:39', '', NULL, '', NULL, 1, 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
@@ -5584,7 +5587,16 @@ CREATE TABLE `meta_tags` (
 
 INSERT INTO `meta_tags` (`id`, `page_name`, `slug`, `meta_title`, `meta_author`, `meta_keywords`, `meta_description`, `image`, `status`, `add_by`, `add_date_time`, `update_date_time`, `update_history`, `is_delete`) VALUES
 (507, 'Home', 'home', 'EM Web and app solution', 'EM Web and app solution', 'EM Web and app solution', 'EM Web and app solution', NULL, 1, 1, '2025-11-11 23:12:56', '2025-11-11 23:12:56', NULL, 0),
-(511, 'Class Booking System', 'class-booking-system', 'Class Booking System', 'Class Booking System', 'Class Booking System', 'Class Booking System', NULL, 1, NULL, NULL, NULL, NULL, 0);
+(511, 'Class Booking System', 'class-booking-system', 'Class Booking System', 'Class Booking System', 'Class Booking System', 'Class Booking System', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(514, 'Mobile App Development', 'mobile-app-development', 'Mobile App Development', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(515, 'CRM Solutions', 'crm-solutions', 'CRM Solutions', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(516, 'E-Commerce Solutions', 'e-commerce-solutions', 'E-Commerce Solutions', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(517, 'UI/UX Design', 'ui-ux-design', 'UI/UX Design', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(518, 'Custom Software Development', 'custom-software-development', 'Custom Software Development', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(519, 'Digital Marketing', 'digital-marketing', 'Digital Marketing', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(520, 'Maintenance & Support', 'maintenance-support', 'Maintenance & Support', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(521, 'Cloud & Hosting Solutions', 'cloud-hosting-solutions', 'Cloud & Hosting Solutions', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0),
+(522, 'IT Consulting', 'it-consulting', 'IT Consulting', '', '', '', NULL, 1, NULL, NULL, NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -5731,6 +5743,46 @@ INSERT INTO `script` (`id`, `name`, `before_head`, `after_body`, `bottom_script`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `service`
+--
+
+CREATE TABLE `service` (
+  `id` int(11) NOT NULL,
+  `cat_id` varchar(50) NOT NULL,
+  `image` text NOT NULL,
+  `images` text DEFAULT NULL,
+  `name` text NOT NULL,
+  `slug` text NOT NULL,
+  `icon` varchar(50) DEFAULT NULL,
+  `sort_description` text NOT NULL,
+  `full_description` longblob DEFAULT NULL,
+  `link` text NOT NULL,
+  `status` int(11) NOT NULL,
+  `add_date_time` datetime NOT NULL,
+  `update_date_time` datetime NOT NULL,
+  `add_by` int(11) DEFAULT NULL,
+  `update_history` text DEFAULT NULL,
+  `is_delete` tinyint(1) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `service`
+--
+
+INSERT INTO `service` (`id`, `cat_id`, `image`, `images`, `name`, `slug`, `icon`, `sort_description`, `full_description`, `link`, `status`, `add_date_time`, `update_date_time`, `add_by`, `update_history`, `is_delete`) VALUES
+(25, '', '', '[]', 'Mobile App Development', 'mobile-app-development', 'fas fa-mobile-alt', 'Bring your ideas to life with powerful Android & iOS apps. We create user-friendly, fast, and scalable mobile applications that engage customers and boost business growth.', '', '', 1, '2025-11-12 17:46:42', '2025-11-12 17:48:19', 1, NULL, 0),
+(26, '', '', '[]', 'CRM Solutions', 'crm-solutions', 'fas fa-users-cog', 'Manage your customers smarter and grow faster. Our CRM systems help you track leads, automate sales, improve customer support, and build lasting relationships. With real-time insights and easy-to-use dashboards, you’ll always stay connected with your clients.', '', '', 1, '2025-11-12 17:48:51', '2025-11-12 17:48:51', 1, NULL, 0),
+(27, '', '', '[]', 'E-Commerce Solutions', 'e-commerce-solutions', 'fas fa-shopping-cart', 'Start selling online with ease. From custom online stores to secure payment gateways, we build e-commerce platforms that deliver smooth shopping experiences.', '', '', 1, '2025-11-12 17:49:34', '2025-11-12 17:49:34', 1, NULL, 0),
+(28, '', '', '[]', 'UI/UX Design', 'ui-ux-design', 'fas fa-pencil-ruler', 'Good design means better engagement. Our creative team crafts intuitive, modern, and visually stunning designs that keep your users hooked.', '', '', 1, '2025-11-12 17:49:53', '2025-11-12 17:49:53', 1, NULL, 0),
+(29, '', '', '[]', 'Custom Software Development', 'custom-software-development', 'fas fa-code', 'Tailored software built around your business needs. We develop reliable, efficient, and future-ready solutions that simplify complex processes.', '', '', 1, '2025-11-12 17:50:15', '2025-11-12 17:50:15', 1, NULL, 0),
+(30, '', '', '[]', 'Digital Marketing', 'digital-marketing', 'fas fa-bullhorn', 'Reach the right audience at the right time. Our SEO, social media, and online marketing strategies help your brand stand out and grow.', '', '', 1, '2025-11-12 17:50:34', '2025-11-12 17:50:34', 1, NULL, 0),
+(31, '', '', '[]', 'Maintenance & Support', 'maintenance-support', 'fas fa-tools', 'We don’t just build — we also take care of your digital assets. Our team provides ongoing updates, bug fixes, and security enhancements for long-term stability.', '', '', 1, '2025-11-12 17:50:50', '2025-11-12 17:50:50', 1, NULL, 0),
+(32, '', '', '[]', 'Cloud & Hosting Solutions', 'cloud-hosting-solutions', 'fas fa-cloud', 'Keep your business online 24/7 with secure, scalable, and high-performance cloud and hosting services.', '', '', 1, '2025-11-12 17:51:06', '2025-11-12 17:51:06', 1, NULL, 0),
+(33, '', '', '[]', 'IT Consulting', 'it-consulting', 'fas fa-user-tie', 'Not sure where to start? Our experts guide you with the right digital strategies, technologies, and roadmaps to achieve your business goals.', '', '', 1, '2025-11-12 17:51:19', '2025-11-12 17:51:19', 1, NULL, 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `setting`
 --
 
@@ -5775,7 +5827,16 @@ CREATE TABLE `slugs` (
 --
 
 INSERT INTO `slugs` (`id`, `slug`, `table_name`, `p_id`, `page_name`) VALUES
-(516, 'class-booking-system', 'portfolio', 24, 'project-detail.php');
+(516, 'class-booking-system', 'portfolio', 24, 'project-detail.php'),
+(519, 'mobile-app-development', 'service', 25, 'service-detail.php'),
+(520, 'crm-solutions', 'service', 26, 'service-detail.php'),
+(521, 'e-commerce-solutions', 'service', 27, 'service-detail.php'),
+(522, 'ui-ux-design', 'service', 28, 'service-detail.php'),
+(523, 'custom-software-development', 'service', 29, 'service-detail.php'),
+(524, 'digital-marketing', 'service', 30, 'service-detail.php'),
+(525, 'maintenance-support', 'service', 31, 'service-detail.php'),
+(526, 'cloud-hosting-solutions', 'service', 32, 'service-detail.php'),
+(527, 'it-consulting', 'service', 33, 'service-detail.php');
 
 -- --------------------------------------------------------
 
@@ -6033,6 +6094,12 @@ ALTER TABLE `script`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `service`
+--
+ALTER TABLE `service`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `setting`
 --
 ALTER TABLE `setting`
@@ -6106,13 +6173,13 @@ ALTER TABLE `enquiry_lead`
 -- AUTO_INCREMENT for table `login_history`
 --
 ALTER TABLE `login_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=237;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=240;
 
 --
 -- AUTO_INCREMENT for table `meta_tags`
 --
 ALTER TABLE `meta_tags`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=512;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=523;
 
 --
 -- AUTO_INCREMENT for table `payment_setting`
@@ -6139,6 +6206,12 @@ ALTER TABLE `script`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `service`
+--
+ALTER TABLE `service`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
 -- AUTO_INCREMENT for table `setting`
 --
 ALTER TABLE `setting`
@@ -6148,7 +6221,7 @@ ALTER TABLE `setting`
 -- AUTO_INCREMENT for table `slugs`
 --
 ALTER TABLE `slugs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=517;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=528;
 
 --
 -- AUTO_INCREMENT for table `state`

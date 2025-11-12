@@ -64,18 +64,18 @@
 				<!-- Main box -->
 				<div class="main-box">
 					<div class="logo-box">
-						<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title="Tronis"></a></div>
+						<div class="logo"><a href="<?=base_url() ?>"><img src="images/logo.png" alt="" title="Tronis"></a></div>
 					</div>
 
 					<!--Nav Box-->
 					<div class="nav-outer">
 						<nav class="nav main-menu">
 							<ul class="navigation">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="about.php">About Us</a></li>
-								<li><a href="services.php">Services</a></li>
-								<li><a href="projects.php">Projects</a></li>
-								<li><a href="contact.php">Get in Touch</a></li>
+								<li><a href="<?=base_url()?>">Home</a></li>
+								<li><a href="about">About Us</a></li>
+								<li><a href="services">Services</a></li>
+								<li><a href="projects">Projects</a></li>
+								<li><a href="contact">Get in Touch</a></li>
 							</ul>
 						</nav>
 
@@ -108,7 +108,7 @@
 			<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
 			<nav class="menu-box">
 				<div class="upper-box">
-					<div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+					<div class="nav-logo"><a href="<?=base_url() ?>"><img src="images/logo.png" alt="" title=""></a></div>
 					<div class="close-btn"><i class="icon fa fa-times"></i></div>
 				</div>
 
@@ -121,7 +121,7 @@
 						<div class="contact-info-box">
 							<i class="icon lnr-icon-phone-handset"></i>
 							<span class="title">Call Now</span>
-							<a href="tel:+92880098670">+92 (8800) - 98670</a>
+							<a href="tel:+91-8368379190">+91-8368379190</a>
 						</div>
 					</li>
 					<li>
@@ -152,21 +152,7 @@
 			</nav>
 		</div><!-- End Mobile Menu -->
 
-		<!-- Header Search -->
-		<div class="search-popup">
-			<span class="search-back-drop"></span>
-			<button class="close-search"><span class="fa fa-times"></span></button>
-
-			<div class="search-inner">
-				<form method="post" action="https://html.emwebandappsolution.com/2023/amiso-html/blog-showcase.html">
-					<div class="form-group">
-						<input type="search" name="search-field" value="" placeholder="Search..." required="">
-						<button type="submit"><i class="fa fa-search"></i></button>
-					</div>
-				</form>
-			</div>
-		</div>
-		<!-- End Header Search -->
+		
 
 		<!-- Sticky Header  -->
 		<div class="sticky-header">
@@ -174,7 +160,7 @@
 				<div class="inner-container">
 					<!--Logo-->
 					<div class="logo">
-						<a href="index.html" title=""><img src="images/logo-2.png" alt="" title=""></a>
+						<a href="<?=base_url() ?>" title=""><img src="images/logo-2.png" alt="" title=""></a>
 					</div>
 
 					<!--Right Col-->
