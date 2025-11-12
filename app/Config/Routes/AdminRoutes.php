@@ -100,6 +100,17 @@ $routes->group('admin', ['namespace' => 'App\Controllers\Admin', 'filter'=>'Admi
         $routes->post('delete/(:any)', 'AdminPortfolioController::delete/$1', ['as' => 'portfolio.delete']);
         $routes->post('block_unblock/(:any)', 'AdminPortfolioController::block_unblock/$1', ['as' => 'portfolio.block_unblock']);
     });
+ 
+    $routes->group('service', function($routes) {
+        $routes->get('/', 'AdminServiceController::index', ['as' => 'service.list']);
+        $routes->get('load_data', 'AdminServiceController::load_data', ['as' => 'service.load_data']);
+        $routes->get('add', 'AdminServiceController::add', ['as' => 'service.add']);
+        $routes->get('edit/(:any)?', 'AdminServiceController::edit/$1', ['as' => 'service.edit']);
+        $routes->get('view/(:any)', 'AdminServiceController::view/$1', ['as' => 'service.view']);
+        $routes->post('update', 'AdminServiceController::update', ['as' => 'service.update']);
+        $routes->post('delete/(:any)', 'AdminServiceController::delete/$1', ['as' => 'service.delete']);
+        $routes->post('block_unblock/(:any)', 'AdminServiceController::block_unblock/$1', ['as' => 'service.block_unblock']);
+    });
 
     
     $routes->group('client-logo', function($routes) {

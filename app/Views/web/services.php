@@ -19,65 +19,22 @@
 		<div class="container pb-90">
 
 			<div class="row">
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon flaticon-color-sample"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Web designing</a></h5>
-						<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon flaticon-front-end"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Web development</a></h5>
-						<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon flaticon-online-shopping"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Web application</a></h5>
-						<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon flaticon-online-shopping"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Web application</a></h5>
-						<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon flaticon-color-sample"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Web development</a></h5>
-						<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon flaticon-online-shopping"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Web designing</a></h5>
-						<div class="text">Tincidunt elit magnis nulla facilisis sags maecenas nunc amet ultrices.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
+				<?php 
+					$services = $db->table('service')->where(["status"=>1,])->get()->getResult();
+					foreach ($services as $key => $value) {
+						
+				?>
+						<!-- Service Block -->
+						<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+							<div class="inner-box">
+								<div class="icon-box"><i class="icon <?=$value->icon?>"></i></div>
+								<h5 class="title"><a ><?=$value->name?></a></h5>
+								<div class="text"><?=$value->sort_description?></div>
+								<a href="<?=base_url(''.$value->slug)?>" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
+							</div>
+						</div>
+						<!-- Service Block -->
+				<?php } ?>
 			</div>
 		</div>
 	</section>

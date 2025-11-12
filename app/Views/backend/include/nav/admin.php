@@ -46,6 +46,11 @@
         <i class="ri-road-map-line"></i> <span data-key="t-transaction">Add Portfolio</span>
     </a>
 </li>
+<li class="nav-item">
+    <a class="nav-link menu-link" href="<?=base_url(route_to('service.list'))?>">
+        <i class="ri-road-map-line"></i> <span data-key="t-transaction">Add Service</span>
+    </a>
+</li>
 
 
 
