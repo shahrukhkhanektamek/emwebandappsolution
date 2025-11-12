@@ -5,7 +5,7 @@
 			<div class="title-outer">
 				<h1 class="title">Services</h1>
 				<ul class="page-breadcrumb">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="<?=base_url()?>">Home</a></li>
 					<li><a href="#">Pages</a></li>
 					<li>Services</li>
 				</ul>

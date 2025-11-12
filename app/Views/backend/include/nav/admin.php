@@ -69,7 +69,7 @@
                 <a href="<?=base_url(route_to('setting.policy'))?>" class="nav-link"> Policies </a>
             </li>
             <li class="nav-item">
-                <a href="<?=base_url(route_to('setting.main'))?>" class="nav-link"> Social </a>
+                <a href="<?=base_url(route_to('setting.main'))?>" class="nav-link"> Contact Detail </a>
             </li>
         </ul>
     </div>
