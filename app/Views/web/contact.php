@@ -5,7 +5,7 @@
 			<div class="title-outer">
 				<h1 class="title">Contact Us</h1>
 				<ul class="page-breadcrumb">
-					<li><a href="index.html">Home</a></li>
+					<li><a href="<?=base_url()?>">Home</a></li>
 					<li>Contact</li>
 				</ul>
 			</div>
@@ -22,7 +22,7 @@
 						<div class="sec-title">
 							<span class="sub-title">Need any help?</span>
 							<h2>Get in touch with us</h2>
-							<div class="text">Lorem ipsum is simply free text available dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt simply free ut labore et dolore magna aliqua.</div>
+							
 						</div>
 						<ul class="list-unstyled contact-details__info">
 							<li>
@@ -31,7 +31,7 @@
 								</div>
 								<div class="text">
 									<h6>Have any question?</h6>
-									<a href="tel:980089850"><span>Free</span> +92 (020)-9850</a>
+									<a href="tel:+91<?=$contact_detail->mobile?>"><span>Free</span> +91-<?=$contact_detail->mobile?></a>
 								</div>
 							</li>
 							<li>
@@ -40,24 +40,27 @@
 								</div>
 								<div class="text">
 									<h6>Write email</h6>
-									<a href="https://html.kodesolution.com/cdn-cgi/l/email-protection#d4bab1b1b0bcb1b8a494b7bbb9a4b5baadfab7bbb9"><span class="__cf_email__" data-cfemail="d1bfb4b4b5b9b4bda191b2bebca1b0bfa8ffb2bebc">[email&#160;protected]</span></a>
+									<a href="mailto:<?=$contact_detail->email?>"><?=$contact_detail->email?></span></a>
 								</div>
 							</li>
-							<li>
-								<div class="icon">
-									<span class="lnr-icon-location"></span>
-								</div>
-								<div class="text">
-									<h6>Visit anytime</h6>
-									<span>66 broklyn golden street. New York</span>
-								</div>
-							</li>
+							<?php if(!empty($contact_detail->address)){?>
+								<li>
+									<div class="icon">
+										<span class="lnr-icon-location"></span>
+									</div>
+									<div class="text">
+										<h6>Visit anytime</h6>
+										<span><?=$contact_detail->address?></span>
+									</div>
+								</li>
+							<?php } ?>
+
 						</ul>
 					</div>
 				</div>
 				<div class="col-xl-7 col-lg-6">
 					<!-- Google Map HTML Codes -->
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843149788316!2d144.9537131159042!3d-37.81714274201087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sbn!2sbd!4v1583760510840!5m2!1sbn!2sbd" width="100%" height="550" frameborder="0" allowfullscreen=""></iframe>
+					<?=$contact_detail->google_map?>
 				</div>
 			</div>
 		</div>
@@ -74,33 +77,32 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
 					<!-- Contact Form -->
-					<form id="contact_form" name="contact_form" class="" action="https://html.kodesolution.com/2023/amiso-html/includes/sendmail.php" method="post">
+					
+
+					<form class="form_data" method="POST" action="<?=env('contact_api')?>" enctype="multipart/form-data" novalidate id="contactPageForm">
+                        <input type="hidden" name="url" value="<?=(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+
 						<div class="row">
 							<div class="col-sm-6 form-group">
 								<div class="mb-3">
-									<input name="form_name" class="form-control required" type="text" placeholder="Enter Name">
+									<input name="name" class="form-control required" type="text" placeholder="Enter Name" required>
 								</div>
 							</div>
 							<div class="col-sm-6 form-group">
 								<div class="mb-3">
-									<input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+									<input name="phone" class="form-control" type="text" placeholder="Enter Phone" required>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-6 form-group">
+							<div class="col-sm-12 form-group">
 								<div class="mb-3">
-									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
-								</div>
-							</div>
-							<div class="col-sm-6 form-group">
-								<div class="mb-3">
-									<input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+									<input name="email" class="form-control required email" type="email" placeholder="Enter Email">
 								</div>
 							</div>
 						</div>
 						<div class="mb-3 form-group">
-							<textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+							<textarea name="message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
 						</div>
 						<div class="mb-3 text-center">
 							<input name="form_botcheck" class="form-control" type="hidden" value="" />

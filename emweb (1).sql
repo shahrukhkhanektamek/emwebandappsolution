@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 12, 2025 at 02:11 PM
+-- Generation Time: Nov 12, 2025 at 08:15 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -5249,7 +5249,8 @@ CREATE TABLE `enquiry_contact` (
 INSERT INTO `enquiry_contact` (`id`, `name`, `phone`, `coment`, `status`, `email`, `subject`, `url`, `add_by`, `add_date_time`, `update_date_time`, `update_history`, `slug`, `is_delete`) VALUES
 (2834, 'ffasfsa', 'faf23562', ' gdsag sdg s', 1, 'fafasfas', 'fsdagasd', 'https://deltahome.store/smart/contact', NULL, '2025-02-06 15:57:35', '2025-02-06 15:57:35', NULL, NULL, 0),
 (2835, 'kjhjkh', 'j78678', 'jhjkh', 1, 'fhgf', '4hgh', 'https://deltahome.store/smart/contact', NULL, '2025-02-06 16:13:38', '2025-02-06 16:13:38', NULL, NULL, 0),
-(2836, 'Jimmy', '9049454815', 'hi', 1, 'nabilansari688@gmail.com', 'showing 503 service error', 'https://deltahome.store/smart/contact', NULL, '2025-02-06 18:20:30', '2025-02-06 18:20:30', NULL, NULL, 0);
+(2836, 'Jimmy', '9049454815', 'hi', 1, 'nabilansari688@gmail.com', 'showing 503 service error', 'https://deltahome.store/smart/contact', NULL, '2025-02-06 18:20:30', '2025-02-06 18:20:30', NULL, NULL, 0),
+(2837, '', '', '', 1, '', '', 'http://localhost/projects/my-website/contact', NULL, '2025-11-12 23:51:29', '2025-11-12 23:51:29', NULL, NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -5556,7 +5557,8 @@ INSERT INTO `login_history` (`id`, `user_id`, `role`, `ip_address`, `date`, `tim
 (236, '1', 1, '::1', '2025-11-11', '23:12:26', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
 (237, '1', 1, '::1', '2025-11-12', '11:49:09', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
 (238, '1', 1, '::1', '2025-11-12', '11:49:46', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
-(239, '1', 1, '::1', '2025-11-12', '17:23:39', '', NULL, '', NULL, 1, 'e10adc3949ba59abbe56e057f20f883e');
+(239, '1', 1, '::1', '2025-11-12', '17:23:39', '', NULL, '', NULL, 0, 'e10adc3949ba59abbe56e057f20f883e'),
+(240, '1', 1, '::1', '2025-11-12', '23:26:19', '', NULL, '', NULL, 1, 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
@@ -5804,7 +5806,7 @@ CREATE TABLE `setting` (
 --
 
 INSERT INTO `setting` (`id`, `name`, `data`, `add_by`, `add_date_time`, `update_date_time`, `update_history`, `slug`, `is_delete`, `status`) VALUES
-(2, 'main', '{\"google_map\":\"\",\"school_time\":\"Sun-Thu: 7:00 AM \\u2013 2:30 PM <br>Saturday: 8:00 AM \\u2013 1:00 PM\",\"email\":\"info@bikeking.com\",\"mobile\":\"d\",\"facebook\":\"#\",\"twitter\":\"#\",\"whatsapp\":\"d\",\"youtube\":\"#\",\"address\":\"\",\"location_map\":\"\",\"instagram\":\"#\",\"telegram\":\"#\",\"linkedin\":\"#\"}', 1, NULL, '2025-01-22 11:28:40', NULL, NULL, 0, 0),
+(2, 'main', '{\"google_map\":\"<iframe src=\\\"https:\\/\\/www.google.com\\/maps\\/embed?pb=!1m18!1m12!1m3!1d271.5971355677461!2d77.08097047464301!3d28.630403594364008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d053a2359d897%3A0x7ade773a38d4c83d!2sCode%20Diffusion%20-%20Mobile%20Application%20Development%20Company%20in%20Delhi!5e1!3m2!1sen!2sin!4v1762970319162!5m2!1sen!2sin\\\" width=\\\"600\\\" height=\\\"450\\\" style=\\\"border:0;\\\" allowfullscreen=\\\"\\\" loading=\\\"lazy\\\" referrerpolicy=\\\"no-referrer-when-downgrade\\\"><\\/iframe>\",\"school_time\":\"Sun-Thu: 7:00 AM \\u2013 2:30 PM <br>Saturday: 8:00 AM \\u2013 1:00 PM\",\"email\":\"emwebandappsolution@gmail.com\",\"mobile\":\"8368379190\",\"facebook\":\"#\",\"twitter\":\"#\",\"whatsapp\":\"8368379190\",\"youtube\":\"#\",\"address\":\"\",\"location_map\":\"https:\\/\\/maps.app.goo.gl\\/fCrvpwHJoNEKPxB17\",\"instagram\":\"#\",\"telegram\":\"#\",\"linkedin\":\"#\"}', 1, NULL, '2025-01-22 11:28:40', NULL, NULL, 0, 0),
 (13, 'logo', '{\"company_name\":\"Web And App Solution\",\"logo_image\":\"logo.png\",\"favicon_image\":\"favicon.png\"}', 1, NULL, '2025-01-29 20:13:50', NULL, NULL, 0, 0),
 (14, 'policy', '{\"terms_policy\":\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\\r\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\\r\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\",\"privacy_policy\":\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\\r\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\\r\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\",\"refund_policy\":\"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\\r\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\\r\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\\/p>\\r\\n\"}', 1, NULL, '2025-01-10 10:23:37', NULL, NULL, 0, 0);
 
@@ -5993,7 +5995,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `user_id`, `referral_id`, `company_name`, `name`, `username`, `email`, `password`, `remember_token`, `add_date_time`, `status`, `role`, `is_paid`, `gender`, `age`, `kyc_step`, `kyc_message`, `image`, `pan`, `phone`, `sales_contact`, `authorized_person`, `person_contact`, `gst`, `udyam`, `workshop_address`, `service_contact`, `spares_accessories_contact`, `country`, `state`, `city`, `area`, `brand`, `add_by`, `update_date_time`, `update_history`, `slug`, `is_delete`) VALUES
-(1, 100, NULL, NULL, 'Bike King', 'admin@gmail.com', 'admin@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '', '2020-08-30 15:56:58', 1, 1, 1, 1, 25, 1, 'gsgsghwegweyw', '1750181213_11adf6ab9a69ead32220.webp', '32523523', '1122334455', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'DELHI', 'GOKULPUR', NULL, NULL, 1, '2025-01-04 12:48:46', NULL, NULL, 0),
+(1, 100, NULL, NULL, 'EM Web And App Solution', 'admin@gmail.com', 'admin@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '', '2020-08-30 15:56:58', 1, 1, 1, 1, 25, 1, 'gsgsghwegweyw', '1750181213_11adf6ab9a69ead32220.webp', '32523523', '1122334455', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'DELHI', 'GOKULPUR', NULL, NULL, 1, '2025-01-04 12:48:46', NULL, NULL, 0),
 (2, 101, NULL, 'My Brand', 'Bike King Vendor', 'vendor@gmail.com', 'vendor@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '', '2020-08-30 15:56:58', 1, 3, 1, 1, 25, 1, 'gsgsghwegweyw', '2025-01-04-6778e0d6dfebc.png', '32523523', '123456890', '5646546546', 'Demo 1', 'Demo 2', 'demo 3', 'demo 4', 'demo 5', 'demo 6', 'demo 7', NULL, 'DELHI', '5116', NULL, '[\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\"]', 1, '2025-06-14 00:53:13', NULL, 'bike-king', 0),
 (3, 102, NULL, 'Demo Company', 'Shte', '', 'test@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', NULL, '2025-05-28 21:39:18', 1, 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '583', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2025-05-28 21:39:18', NULL, 'shte', 0),
 (4, 103, NULL, 'afas', 'fasfsa', '', 'sharukhkhanektamek1998@gmail.com', 'c7d1e45c19751c1cc08263c1f470b184', NULL, '2025-05-28 21:42:45', 1, 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2523523', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, '2025-05-28 21:42:45', NULL, 'fasfsa', 0),
@@ -6161,7 +6163,7 @@ ALTER TABLE `client_logo`
 -- AUTO_INCREMENT for table `enquiry_contact`
 --
 ALTER TABLE `enquiry_contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2837;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2838;
 
 --
 -- AUTO_INCREMENT for table `enquiry_lead`
@@ -6173,7 +6175,7 @@ ALTER TABLE `enquiry_lead`
 -- AUTO_INCREMENT for table `login_history`
 --
 ALTER TABLE `login_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=240;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=241;
 
 --
 -- AUTO_INCREMENT for table `meta_tags`

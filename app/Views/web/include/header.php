@@ -22,6 +22,18 @@
 <?php include"meta.php"; ?>
 
 
+<link rel="stylesheet" href="<?=base_url('public')?>/toast/saber-toast.css">
+<link rel="stylesheet" href="<?=base_url('public')?>/toast/style.css">
+<link rel="stylesheet" href="<?=base_url('public')?>/front_css.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="<?=base_url('public')?>/front_script.js"></script>
+<link rel="stylesheet" href="<?=base_url('public')?>/upload-multiple/style.css">
+<script src="<?=base_url('public')?>/upload-multiple/script.js"></script>    
+<link rel="stylesheet" href="<?=base_url('public/')?>/assetsadmin/select2/css/select2.min.css">
+
+
 </head>
 
 <body>
@@ -39,7 +51,7 @@
 
 				<div class="top-left">
 					<ul class="list-style-one">
-						<li><i class="fa fa-envelope"></i> <a href="mailto:emwebandappsolution@gmail.com"><span class="__cf_email__" >emwebandappsolution@gmail.com</span></a></li>
+						<li><i class="fa fa-envelope"></i> <a href="mailto:<?=$contact_detail->email?>"><span class="__cf_email__" ><?=$contact_detail->email?></span></a></li>
 						<li><i class="fa fa-map-marker"></i> Delhi</li>
 					</ul>
 				</div>
@@ -83,15 +95,11 @@
 					</div>
 
 					<div class="outer-box">
-						<div class="ui-btn-outer">
-							<button class="ui-btn ui-btn search-btn">
-								<span class="icon lnr lnr-icon-search"></span>
-							</button>
-						</div>
+						
 
-						<a href="tel:+918368379190" class="info-btn">
+						<a href="tel:+91<?=$contact_detail->mobile?>" class="info-btn">
 							<i class="icon fa fa-phone"></i>
-							<small>Call Anytime</small>+91-8368379190
+							<small>Call Anytime</small>+91-<?=$contact_detail->mobile?>
 						</a>
 
 						<!-- Mobile Nav toggler -->
@@ -121,7 +129,7 @@
 						<div class="contact-info-box">
 							<i class="icon lnr-icon-phone-handset"></i>
 							<span class="title">Call Now</span>
-							<a href="tel:+91-8368379190">+91-8368379190</a>
+							<a href="tel:+91-<?=$contact_detail->mobile?>">+91-<?=$contact_detail->mobile?></a>
 						</div>
 					</li>
 					<li>
@@ -129,25 +137,17 @@
 						<div class="contact-info-box">
 							<span class="icon lnr-icon-envelope1"></span>
 							<span class="title">Send Email</span>
-							<a href="mailto:emwebandappsolution@gmail.com"><span class="__cf_email__" >emwebandappsolution@gmail.com</span></a>
+							<a href="mailto:<?=$contact_detail->email?>"><span class="__cf_email__" ><?=$contact_detail->email?></span></a>
 						</div>
 					</li>
-					<li>
-						<!-- Contact Info Box -->
-						<div class="contact-info-box">
-							<span class="icon lnr-icon-clock"></span>
-							<span class="title">Send Email</span>
-							Mon - Sat 8:00 - 6:30, Sunday - CLOSED
-						</div>
-					</li>
+					
 				</ul>
 
 
 				<ul class="social-links">
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-					<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="<?=$contact_detail->twitter?>"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="<?=$contact_detail->facebook?>"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="<?=$contact_detail->instagram?>"><i class="fab fa-instagram"></i></a></li>
 				</ul>
 			</nav>
 		</div><!-- End Mobile Menu -->

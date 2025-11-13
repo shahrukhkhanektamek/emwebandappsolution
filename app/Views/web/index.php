@@ -20,7 +20,7 @@
 								<h1 class="title animate-1">We <br>Create Quality Designs</h1>
 								<div class="btn-box animate-3">
 									<a href="#" class="theme-btn btn-style-one"><span class="btn-title">Explore Now</span></a>
-									<a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-btn lightbox-image"><i class="icon fa fa-play"></i> Work <br>Showcase</a>
+									
 								</div>
 							</div>
 						</div>
@@ -601,35 +601,32 @@
 							</div>
 
 							<!--Contact Form-->
-							<form id="contact_form" name="contact_form" class="" action="https://html.emwebandappsolution.com/2023/amiso-html/includes/sendmail.php" method="post">
+							<form class="form_data" method="POST" action="<?=env('contact_api')?>" enctype="multipart/form-data" novalidate id="contactPageForm">
+                        <input type="hidden" name="url" value="<?=(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>">
+
 								<div class="row">
 									<div class="col-sm-6 form-group">
-										<div class="">
-											<input name="form_name" class="form-control required" type="text" placeholder="Enter Name">
+										<div class="mb-3">
+											<input name="name" class="form-control required" type="text" placeholder="Enter Name" required>
 										</div>
 									</div>
 									<div class="col-sm-6 form-group">
-										<div class="">
-											<input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+										<div class="mb-3">
+											<input name="phone" class="form-control" type="text" placeholder="Enter Phone" required>
 										</div>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-sm-6 form-group">
-										<div class="">
-											<input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
-										</div>
-									</div>
-									<div class="col-sm-6 form-group">
-										<div class="">
-											<input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+									<div class="col-sm-12 form-group">
+										<div class="mb-3">
+											<input name="email" class="form-control required email" type="email" placeholder="Enter Email">
 										</div>
 									</div>
 								</div>
-								<div class=" form-group">
-									<textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+								<div class="mb-3 form-group">
+									<textarea name="message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
 								</div>
-								<div class="">
+								<div class="mb-3 text-center">
 									<input name="form_botcheck" class="form-control" type="hidden" value="" />
 									<button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
 									<button type="reset" class="theme-btn btn-style-one"><span class="btn-title">Reset</span></button>
