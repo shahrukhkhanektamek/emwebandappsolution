@@ -3196,7 +3196,7 @@ Section Title
 }
 .banner-section-two .image-box {
   position: relative;
-  padding-left: 110px;
+  padding-left: 30px;
 }
 .banner-section-two .image-box .image-1 {
   position: relative;
@@ -3210,8 +3210,8 @@ Section Title
 }
 .banner-section-two .image-box .image-2 {
   position: absolute;
-  right: -370px;
-  top: 120px;
+  right: -175px;
+  top: 0px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -3438,7 +3438,7 @@ Section Title
           box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
 }
 .about-section .image-column .image-2 img {
-  width: 100%;
+  width: 250px;
 }
 
 .about-section .experience {
@@ -12587,4 +12587,8 @@ Sidebar
   background: #ff8500;
   border-color: #ff8500;
   color: white;
+}
+
+.banner-section-two .image-box .image-2 img, .banner-section-two .image-box .image-1 img {
+    width: 350px;
 }

@@ -52,8 +52,8 @@
 				<!-- Image Column -->
 				<div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
 					<div class="inner-column wow fadeInLeft">
-						<figure class="image-1 overlay-anim wow fadeInUp"><img src="images/resource/about-1.jpg" alt=""></figure>
-						<figure class="image-2 overlay-anim wow fadeInRight"><img src="images/resource/about-2.jpg" alt=""></figure>
+						<figure class="image-1 overlay-anim wow fadeInUp"><img src="images/resource/about-8.jpg" alt=""></figure>
+						<figure class="image-2 overlay-anim wow fadeInRight"><img src="images/resource/about-9.jpg" alt=""></figure>
 						<div class="experience bounce-y">
 							<div class="inner">
 								<i class="icon flaticon-discuss"></i>
