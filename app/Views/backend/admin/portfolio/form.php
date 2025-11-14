@@ -65,10 +65,42 @@
                                     <input type="text" class="form-control" name="slug" placeholder="i.e yamaha-mt-15-v2" value="<?=@$row->slug?>" >
                                 </div>
 
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <label class="form-label">Link </label>
                                     <input type="text" class="form-control" name="link" placeholder="" value="<?=@$row->link?>" >
                                 </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label">Client <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="client" placeholder="" value="<?=@$row->client?>" >
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label class="form-label">Demo Front Link </label>
+                                    <input type="text" class="form-control" name="demo_front_link" placeholder="" value="<?=env('demo_domain').@$row->demo_front_link?>" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Username </label>
+                                    <input type="text" class="form-control" name="demo_front_username" placeholder="" value="<?=@$row->demo_front_username?>" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Password </label>
+                                    <input type="text" class="form-control" name="demo_front_password" placeholder="" value="<?=@$row->demo_front_password?>" >
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <label class="form-label">Demo Admin Link </label>
+                                    <input type="text" class="form-control" name="demo_admin_link" placeholder="" value="<?=env('demo_domain').@$row->demo_admin_link?>" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Username </label>
+                                    <input type="text" class="form-control" name="demo_admin_username" placeholder="" value="<?=@$row->demo_admin_username?>" >
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label">Password </label>
+                                    <input type="text" class="form-control" name="demo_admin_password" placeholder="" value="<?=@$row->demo_admin_password?>" >
+                                </div>
+
 
                                 <div class="col-lg-12">
                                     <label class="form-label">Sort Description <span class="text-danger">*</span></label>

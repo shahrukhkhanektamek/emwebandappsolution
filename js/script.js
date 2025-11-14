@@ -407,23 +407,7 @@ var THEMEMASCOT = {};
 			smartSpeed: 400,
 			autoplay: true,
 			navText: ['<span class="fa fa-long-arrow-alt-left"></span>', '<span class="fa fa-long-arrow-alt-right"></span>'],
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: 1
-				},
-				767: {
-					items: 2
-				},
-				1023: {
-					items: 3
-				},
-				1200: {
-					items: 4
-				}
-			}
+			items: 1,
 		});
 	}
 
@@ -534,6 +518,8 @@ var THEMEMASCOT = {};
 			}
 		});
 	}
+
+
 
 
 	//Jquery Knob animation  // Pie Chart Animation

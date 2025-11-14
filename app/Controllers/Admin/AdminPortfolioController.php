@@ -129,6 +129,13 @@ class AdminPortfolioController extends BaseController
             "cat_id"=>$this->request->getPost('cat_id'),    
 
             "slug"=>$this->request->getPost('slug'),
+            "client"=>$this->request->getPost('client'),
+            "demo_front_link"=>@explode(env('demo_domain'), $this->request->getPost('demo_front_link'))[1],
+            "demo_front_username"=>$this->request->getPost('demo_front_username'),
+            "demo_front_password"=>$this->request->getPost('demo_front_password'),
+            "demo_admin_link"=>@explode(env('demo_domain'), $this->request->getPost('demo_admin_link'))[1],
+            "demo_admin_username"=>$this->request->getPost('demo_admin_username'),
+            "demo_admin_password"=>$this->request->getPost('demo_admin_password'),
             "sort_description"=>$this->request->getPost('sort_description'),
             "full_description"=>$this->request->getPost('full_description'),
             "link"=>$this->request->getPost('link'),
