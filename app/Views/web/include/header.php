@@ -87,6 +87,7 @@
 								<li><a href="about">About Us</a></li>
 								<li><a href="services">Services</a></li>
 								<li><a href="projects">Projects</a></li>
+								<li><a href="shop">Shop</a></li>
 								<li><a href="contact">Get in Touch</a></li>
 							</ul>
 						</nav>

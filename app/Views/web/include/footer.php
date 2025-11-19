@@ -22,7 +22,7 @@
 					</div>
 
 					<!--Footer Column-->
-					<div class="footer-column col-xl-3 col-lg-4 col-md-4">
+					<div class="footer-column col-xl-2 col-lg-4 col-md-4">
 						<div class="footer-widget links-widget">
 							<h6 class="widget-title">Explore</h6>
 							<ul class="user-links">
@@ -30,41 +30,30 @@
 								<li><a href="services">Services</a></li>
 								<li><a href="projects">Our Projects</a></li>
 								<li><a href="contact">Contact</a></li>
+								<li><a href="shop">Shop</a></li>
 							</ul>
 						</div>
 					</div>
 
-					<!--Footer Column-->
-					<div class="footer-column col-xl-3 col-lg-4 col-md-4 col-sm-8">
-						<div class="footer-widget gallery-widget">
-							<h6 class="widget-title">Portfolio</h6>
-							<div class="widget-content">
-								<div class="outer clearfix">
-									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-1.jpg" alt=""></a>
-									</figure>
-									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-2.jpg" alt=""></a>
-									</figure>
-									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-3.jpg" alt=""></a>
-									</figure>
-									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-4.jpg" alt=""></a>
-									</figure>
-									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-5.jpg" alt=""></a>
-									</figure>
-									<figure class="image">
-										<a href="#"><img src="images/resource/project-thumb-6.jpg" alt=""></a>
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<!--Footer Column-->
 					<div class="footer-column col-xl-3 col-lg-4 col-md-4">
+						<div class="footer-widget links-widget">
+							<h6 class="widget-title">Policy</h6>
+							<ul class="user-links">
+								<li><a href="terms">Terms & Conditions</a></li>
+								<li><a href="privacy">Privacy Policy</a></li>
+								<li><a href="refund">Refund Policy</a></li>
+								<li><a href="delivery">Digital Delivery Policy</a></li>
+								<li><a href="cancellation">Cancellation Policy</a></li>
+							</ul>
+						</div>
+					</div>
+
+					
+
+					<!--Footer Column-->
+					<div class="footer-column col-xl-4 col-lg-4 col-md-4">
 						<div class="footer-widget contacts-widget">
 							<h6 class="widget-title">Contact</h6>
 							<div class="text"><?=$contact_detail->address?></div>

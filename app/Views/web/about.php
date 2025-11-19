@@ -6,8 +6,7 @@
 				<h1 class="title">About Us</h1>
 				<ul class="page-breadcrumb">
 					<li><a href="<?=base_url()?>">Home</a></li>
-					<li><a href="#">Pages</a></li>
-					<li>About</li>
+					<li>About Us</li>
 				</ul>
 			</div>
 		</div>
@@ -76,103 +75,31 @@
 			</div>
 
 			<div class="row">
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-mobile-alt"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Mobile App Development</a></h5>
-						<div class="text">Bring your ideas to life with powerful Android & iOS apps. We create user-friendly, fast, and scalable mobile applications that engage customers and boost business growth.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-users-cog"></i></div>
-						<h5 class="title"><a href="page-service-details.html">CRM Solutions</a></h5>
-						<div class="text">Manage your customers smarter and grow faster. Our CRM systems help you track leads, automate sales, improve customer support, and build lasting relationships. With real-time insights and easy-to-use dashboards, you’ll always stay connected with your clients.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-shopping-cart"></i></div>
-						<h5 class="title"><a href="page-service-details.html">E-Commerce Solutions</a></h5>
-						<div class="text">Start selling online with ease. From custom online stores to secure payment gateways, we build e-commerce platforms that deliver smooth shopping experiences.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-pencil-ruler"></i></div>
-						<h5 class="title"><a href="page-service-details.html">UI/UX Design</a></h5>
-						<div class="text">Good design means better engagement. Our creative team crafts intuitive, modern, and visually stunning designs that keep your users hooked.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-code"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Custom Software Development</a></h5>
-						<div class="text">Tailored software built around your business needs. We develop reliable, efficient, and future-ready solutions that simplify complex processes.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-bullhorn"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Digital Marketing</a></h5>
-						<div class="text">Reach the right audience at the right time. Our SEO, social media, and online marketing strategies help your brand stand out and grow.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-tools"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Maintenance & Support</a></h5>
-						<div class="text">We don’t just build — we also take care of your digital assets. Our team provides ongoing updates, bug fixes, and security enhancements for long-term stability.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-cloud"></i></div>
-						<h5 class="title"><a href="page-service-details.html">Cloud & Hosting Solutions</a></h5>
-						<div class="text">Keep your business online 24/7 with secure, scalable, and high-performance cloud and hosting services.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
-
-				<!-- Service Block -->
-				<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="icon-box"><i class="icon fas fa-user-tie"></i></div>
-						<h5 class="title"><a href="page-service-details.html">IT Consulting</a></h5>
-						<div class="text">Not sure where to start? Our experts guide you with the right digital strategies, technologies, and roadmaps to achieve your business goals.</div>
-						<a href="page-service-details.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
-					</div>
-				</div>
+				<?php 
+					$services = $db->table('service')->where(["status"=>1,])->get()->getResult();
+					foreach ($services as $key => $value) {						
+				?>
+						<!-- Service Block -->
+						<div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+							<div class="inner-box">
+								<div class="icon-box"><i class="icon <?=$value->icon?>"></i></div>
+								<h5 class="title"><a ><?=$value->name?></a></h5>
+								<div class="text"><?=$value->sort_description?></div>
+								<a href="<?=$value->slug?>" class="read-more"><i class="fa fa-long-arrow-alt-right"></i> Read more</a>
+							</div>
+						</div>
+						<!-- Service Block -->
+				<?php } ?>
 			</div>
 
 			<div class="bottom-box">
 				<div class="text">Trust the experts for all your <strong>web design & development</strong> needs.</div>
-				<a href="page-services.html" class="theme-btn btn-style-one"><span class="btn-title">Explore now</span></a>
+				<a href="services" class="theme-btn btn-style-one"><span class="btn-title">Explore now</span></a>
 			</div>
 		</div>
 	</section>
 	<!-- End Services Section-->
+
 
 
 
